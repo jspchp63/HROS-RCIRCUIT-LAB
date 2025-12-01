@@ -92,9 +92,10 @@ New paradigm (RCIRCUIT):
 - `pcintercon_v2.jpg`  
 - `ai_physics_boundary.png`  
 - `README.md` 
-
+Interconnect_Crisis_v2.1_NVLink.pdf — Physical bottleneck (NVLink Edition)
+Energy_Wall_v3.pdf — Power density collapse (2025–2030)
 More diagrams will be released in v3 (public-safe versions only).
-
+Interconnect_Crisis_v2_English.pdf
 ---
 
 ## 6. 🎯 Who This Is For
