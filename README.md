@@ -84,14 +84,41 @@ Both propagate **meaningful change (Δsignal)** rather than raw bulk data.
 
 ---
 
-## 5. Repository Contents
-- `Interconnect_Crisis_PhaseOS_v2.1.pdf`  
-- `Phase_Compute_OS_Public_Brief_v2.pdf`  
-- `RCIRCUIT_Definition_v1_GoogleNLP.pdf`  
+5. Repository Contents 
 
-*(Concept-only. No production code included.)*
+🔹 Core Architecture Papers
 
----
+Interconnect Crisis – v2
+docs/Interconnect_Crisis_v2.pdf
+
+Phase Compute OS — Public Brief (v2)
+docs/PhaseComputeOS_PublicBrief_v2.pdf
+
+Phase Compute OS — Energy Wall Analysis (v3)
+docs/PhaseComputeOS_EnergyWall_v3.pdf
+
+Phase Compute OS — Interconnect Crisis (v2.1)
+docs/PhaseComputeOS_InterconnectCrisis_v2.1.pdf
+
+🔹 System Architecture Guide
+
+Architecture Guide – v1
+docs/Architecture_Guide_v1.pdf
+
+🔹 Source
+
+Prototype code (concept-only)
+src/
+
+rcircuit_core_v0.1.py
+
+rcircuit_core_v0.2_skeleton.py
+
+🔹 Repository Policy
+
+This repository contains public-safe research materials only.
+Full RCIRCUIT implementation will be released after:
+safety · legality · partner verification.
 
 ## 6. Who This Repository Is For
 - GPU / TPU / HPC engineers  
