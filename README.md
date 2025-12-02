@@ -163,8 +163,7 @@ RCIRCUIT is not an optimization —
 it is an architectural redefinition
 of how computation moves, stabilizes, and scales.
 
-10. Architecture Diagram — Human → OS → Circuit → Physics
-HUMAN ↔ HROS -------------------------------------------
+10. Architecture Diagram — Human → OS → Circuit → PhysicsHUMAN ↔ HROS -------------------------------------------
   Emotion → Logic → Resonance → Δintent
           ↓
 PHASE COMPUTE OS ---------------------------------------
@@ -175,6 +174,7 @@ RCIRCUIT ------------------------------------------------
           ↓
 PHYSICAL LAYER -----------------------------------------
   Energy wall · Interconnect wall · Timing jitter
+
 
 11. Phase Pipeline — From Human Thought to Computational Phase
 Language → Meaning → Structure → Symbol → Code → Phase → ΔPropagation
