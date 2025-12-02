@@ -92,7 +92,7 @@ Both remove noise and propagate only meaningful Δsignal.**
 - **Interconnect_Crisis_PhaseOS_v2.1.pdf** — core physical bottleneck brief  
 - **Phase_Compute_OS_Public_Brief_v2.pdf** — public architecture model  
 - **RCIRCUIT_Definition_v1_GoogleNLP.pdf** — semantic technical definition  
-- **physics_boundary_map_v1.png** — physical scaling boundary diagram  
+   
 
 ---
 
