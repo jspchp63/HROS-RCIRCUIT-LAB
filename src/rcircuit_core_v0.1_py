@@ -1,1 +1,70 @@
+# ============================================================
+# RCIRCUIT CORE PROTOTYPE v0.1
+# Phase Computing · Δsignal Propagation · Resonance Engine
+# Author: Chulhee Park (HROS Lab)
+# ============================================================
+
+class PhaseNode:
+    """
+    A minimal unit of RCIRCUIT.
+    Holds:
+        - local phase
+        - local noise estimate
+        - last resonance score
+    """
+    def __init__(self, phase=0.0):
+        self.phase = phase
+        self.noise = 0.0
+        self.resonance = 0.0
+
+    def update_phase(self, delta_phase):
+        self.phase += delta_phase
+
+    def compute_resonance(self, neighbor_phase):
+        diff = abs(self.phase - neighbor_phase)
+        self.resonance = 1.0 / (1.0 + diff)
+        return self.resonance
+
+
+class DeltaSignal:
+    """Propagated unit: meaningful change (Δsignal), not raw data."""
+    def __init__(self, value):
+        self.value = value
+
+
+class RCIRCUIT:
+    """Resonance engine prototype. Handles Δsignal propagation."""
+    def __init__(self):
+        self.nodes = []
+
+    def add_node(self, node: PhaseNode):
+        self.nodes.append(node)
+
+    def noise_filter(self, delta: float, threshold: float = 0.05):
+        if abs(delta) < threshold:
+            return None
+        return DeltaSignal(delta)
+
+    def propagate(self, node_index: int, delta_signal: DeltaSignal):
+        if delta_signal is None:
+            return
+        for i, node in enumerate(self.nodes):
+            if i == node_index:
+                continue
+            node.update_phase(delta_signal.value)
+
+
+# Example
+if __name__ == "__main__":
+    rc = RCIRCUIT()
+    rc.add_node(PhaseNode(1.0))
+    rc.add_node(PhaseNode(1.5))
+
+    delta = 1.5 - 1.0
+    signal = rc.noise_filter(delta)
+    rc.propagate(0, signal)
+
+    print("Node phases after propagation:")
+    for n in rc.nodes:
+        print(n.phase)
 
