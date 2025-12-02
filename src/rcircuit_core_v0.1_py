@@ -1,16 +1,20 @@
 # ============================================================
 # RCIRCUIT CORE PROTOTYPE v0.1
-# Phase Computing · Δsignal Propagation · Resonance Engine
-# Author: Chulhee Park (HROS Lab)
+# Phase-Based Compute Model · Δsignal Propagation · Resonance Logic
+# Author: Chulhee Park — HROS / Phase Computing Founder
+#
+# NOTE:
+#   This is a public-safe conceptual prototype.
+#   Full propagation engine is NOT included (IP/Safety restricted).
 # ============================================================
 
 class PhaseNode:
     """
-    A minimal unit of RCIRCUIT.
-    Holds:
-        - local phase
-        - local noise estimate
-        - last resonance score
+    Minimal RCIRCUIT computation unit.
+    Tracks:
+      - local phase
+      - noise estimate
+      - resonance score
     """
     def __init__(self, phase=0.0):
         self.phase = phase
@@ -18,22 +22,41 @@ class PhaseNode:
         self.resonance = 0.0
 
     def update_phase(self, delta_phase):
+        """Adjust local phase toward coherence."""
         self.phase += delta_phase
 
     def compute_resonance(self, neighbor_phase):
+        """
+        Simple coherence function.
+        High = phases aligned.
+        Low  = phases diverged.
+        """
         diff = abs(self.phase - neighbor_phase)
         self.resonance = 1.0 / (1.0 + diff)
         return self.resonance
 
 
 class DeltaSignal:
-    """Propagated unit: meaningful change (Δsignal), not raw data."""
+    """
+    Δsignal = only meaningful change, not full data.
+    Phase Computing = movement of Δ, not bulk tensors.
+
+    🔹 한국어 개념:
+        - '변화율'만 전달된다.
+        - 인간 언어로 치면 “핵심 말 한마디만 전달하는 것”.
+    """
     def __init__(self, value):
         self.value = value
 
 
 class RCIRCUIT:
-    """Resonance engine prototype. Handles Δsignal propagation."""
+    """
+    Public-safe RCIRCUIT resonance engine.
+    Handles:
+      - local phase update
+      - noise filtering
+      - Δsignal propagation
+    """
     def __init__(self):
         self.nodes = []
 
@@ -41,21 +64,37 @@ class RCIRCUIT:
         self.nodes.append(node)
 
     def noise_filter(self, delta: float, threshold: float = 0.05):
+        """
+        Remove noise (Δ too small).
+        Return meaningful Δsignal only.
+
+        🔹 한국어 개념:
+            - “쓸데없는 감정/정보 제거”.
+            - Phase Computing의 핵심 철학.
+        """
         if abs(delta) < threshold:
             return None
         return DeltaSignal(delta)
 
     def propagate(self, node_index: int, delta_signal: DeltaSignal):
+        """
+        Propagate Δsignal to all neighbors.
+
+        NOTE:
+          - This is conceptual. Real propagation uses
+            coherence maps, adjacency rules, and timing windows.
+        """
         if delta_signal is None:
             return
+
         for i, node in enumerate(self.nodes):
             if i == node_index:
                 continue
             node.update_phase(delta_signal.value)
 
 
-# Example
 if __name__ == "__main__":
+    # Toy Example
     rc = RCIRCUIT()
     rc.add_node(PhaseNode(1.0))
     rc.add_node(PhaseNode(1.5))
@@ -64,7 +103,7 @@ if __name__ == "__main__":
     signal = rc.noise_filter(delta)
     rc.propagate(0, signal)
 
-    print("Node phases after propagation:")
     for n in rc.nodes:
         print(n.phase)
+# ============================================================
 
