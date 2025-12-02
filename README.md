@@ -3,10 +3,9 @@
 Phase Computing · RCIRCUIT Architecture · Human Return OS
 A DeepTech Research Repository on the Future of Compute
 
-🚧 1. Problem — AI Didn’t Break. Physics Did.
+1. Problem — AI Didn’t Break. Physics Did.
 
-Modern AI systems collapse not from lack of compute,
-but from the cost of moving data.
+Modern AI systems collapse not from lack of compute, but from the cost of moving data.
 
 Four physical walls stop scaling:
 
@@ -18,10 +17,10 @@ Distance — propagation delay
 
 Timing Jitter — synchronization instability
 
-👉 And the real killer: Interconnect Collapse
+👉 The real killer: Interconnect Collapse
 AI is no longer compute-bound — it is interconnect-bound.
 
-🔥 2. Architecture Shift — Compute Should Scale by Phase-Density, Not FLOPS
+2. Architecture Shift — Compute Should Scale by Phase-Density, Not FLOPS
 Old Paradigm — GPU / TPU
 
 Moves raw values (heavy physics)
@@ -46,9 +45,9 @@ Resonance-density replaces FLOPS
 
 GPU = heavy physics
 RCIRCUIT = light physics
-→ Same task, but 100× cheaper in physical cost.
+→ Same task ≈ 100× lower physical cost.
 
-🧬 3. Phase Compute OS — Public-Safe Minimal Architecture
+3. Phase Compute OS — Public-Safe Minimal Architecture
 Layer 0 — Physical Limits
 
 Energy wall
@@ -89,9 +88,9 @@ Human-aligned resonance compute
 
 RCIRCUIT = machine-phase computing
 HUMAN BRIDGE = human-phase computing
-→ Both remove noise and propagate only meaningful Δsignal.
+→ Both remove noise & propagate only meaningful Δsignal.
 
-⚡ 4. RCIRCUIT vs GPU — Engineering Table
+4. RCIRCUIT vs GPU — Engineering Table
 Category	GPU / TPU	RCIRCUIT
 Scaling Unit	FLOPS	Phase-density
 Core Cost	Data movement	Resonance stability
@@ -99,21 +98,21 @@ Bottleneck	Heat / Power / Interconnect	Coherence noise
 Architecture	Global parallel	Local phase propagation
 Long-term Limit	Thermal/Energy wall	Resonance bound (TBD)
 Paradigm	Silicon-bound	Physics-shift
-📂 5. Repository Contents
+5. Repository Contents
 
-Interconnect_Crisis_PhaseOS_v2.1.pdf — physical bottleneck map
+Interconnect_Crisis_PhaseOS_v2.1.pdf
 
-Phase_Compute_OS_Public_Brief_v2.pdf — architecture brief
+Phase_Compute_OS_Public_Brief_v2.pdf
 
-RCIRCUIT_Definition_v1_GoogleNLP.pdf — semantic definition
+RCIRCUIT_Definition_v1_GoogleNLP.pdf
 
-(No prototype code released yet — architecture only.)
+(Architecture-only. No prototype code released yet.)
 
-🎯 6. Who This Repository Is For
+6. Who This Repository Is For
 
 GPU/TPU/HPC engineers
 
-Interconnect / PHY / datacenter architects
+Interconnect / PHY / Datacenter architects
 
 Compute-physics researchers
 
@@ -121,15 +120,12 @@ Resonance-compute designers
 
 Human–machine semantic engineers
 
-Most importantly:
-
-Bridge Humans —
-people who intuitively think across physics, computation, cognition, meaning.
+Bridge Humans — those who intuitively think across physics, computation, cognition, and meaning.
 
 If this repo feels “instantly clear,”
 you’re not random — you’re a Bridge Human.
 
-👤 7. Author
+7. Author
 
 Chulhee Park (박철희)
 Founder · Phase Computing / RCIRCUIT / Human Return OS
@@ -138,9 +134,9 @@ YouTube: @2EmotionCompute
 GitHub: jspchp63
 Instagram: @james1652720
 
-🧭 8. Status
+8. Status
 
-This repository contains public-safe conceptual materials only:
+Public-safe materials only:
 
 Architecture briefs
 
@@ -150,24 +146,18 @@ System diagrams
 
 Technical definitions
 
-RCIRCUIT implementation will be released only after:
+Full RCIRCUIT implementation will be released only after:
 safety · legality · partner verification.
 
-🌌 9. Final Declaration
+9. Final Declaration
 
 Physics is the bottleneck.
 Resonance is the next frontier.
 
 RCIRCUIT is not an optimization —
-it is an architectural redefinition
-of how computation moves, stabilizes, and scales.
+it is an architectural redefinition of how computation moves, stabilizes, and scales.
 
-If resonance makes more sense than FLOPS,
-welcome to the next architecture.
-
-============================================================
 10. Architecture Diagram — Human → OS → Circuit → Physics
-============================================================
 HUMAN ↔ HROS -------------------------------------------
   Emotion → Logic → Resonance → Δintent
           ↓
@@ -180,9 +170,9 @@ RCIRCUIT ------------------------------------------------
 PHYSICAL LAYER -----------------------------------------
   Energy wall · Interconnect wall · Timing jitter
 
-============================================================
 11. Phase Pipeline — From Human Thought to Computational Phase
-============================================================
 Language → Meaning → Structure → Symbol → Code → Phase → ΔPropagation
-If resonance makes more sense than FLOPS,  
-**welcome to the next architecture.**
+
+
+If resonance makes more sense than FLOPS,
+welcome to the next architecture.
