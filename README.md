@@ -1,6 +1,9 @@
-# HROS-RCIRCUIT-LAB  
-### Phase Compute OS · RCIRCUIT Architecture · Human Return OS (HROS)  
-### Experimental DeepTech Repository
+RCIRCUIT = A phase-based computing architecture designed to bypass GPU/TPU scaling limits caused by interconnect physics.
+This repo contains public briefs, physics analyses, and architecture outlines.
+Target: HPC, interconnect, GPU infra, and compute-physics researchers.
+Status: Conceptual architecture; prototype not included.
+Core idea: Compute should scale by resonance-density, not FLOPS.
+HROS-RCIRCUIT-LAB  
 
 ---
 
