@@ -1,147 +1,130 @@
 # ============================================================
 # RCIRCUIT CORE SKELETON v0.2
-# Phase Computing · Δsignal Propagation · Resonance Engine
-# Author: Chulhee Park (HROS Lab)
-# ------------------------------------------------------------
-# NOTE:
-#   - Concept-only. Safe for public release.
-#   - No hardware binding. No optimization routines.
-#   - This is a minimal skeleton for future expansion.
+# Phase Scheduler Hooks · Coherence Map Placeholder
+# Author: Chulhee Park — Phase Computing / HROS
+#
+# THIS FILE DEFINES:
+#   - Expandable architecture skeleton
+#   - Phase scheduler entry points
+#   - Coherence-map placeholder (no proprietary logic)
+#   - Δsignal pathways for future propagation rules
+#
+# SAFETY NOTICE:
+#   Full propagation algorithm is intentionally removed.
 # ============================================================
 
-
-# -----------------------------
-# 1. Core Data Structures
-# -----------------------------
 class PhaseNode:
-    """
-    Minimal phase-carrying node.
-    Stores:
-        - local phase value
-        - local noise estimate
-        - last resonance score
-    """
+    """Basic node with phase, noise, and resonance."""
     def __init__(self, phase=0.0):
         self.phase = phase
         self.noise = 0.0
         self.resonance = 0.0
 
     def update_phase(self, delta):
-        """Adjust phase locally."""
         self.phase += delta
 
     def compute_resonance(self, neighbor_phase):
-        """Simple coherence metric."""
         diff = abs(self.phase - neighbor_phase)
         self.resonance = 1.0 / (1.0 + diff)
         return self.resonance
 
 
-
 class DeltaSignal:
-    """
-    Δsignal = meaningful change only.
-    Not full tensor, not bulk data.
-    """
+    """Meaningful Δ only."""
     def __init__(self, value):
         self.value = value
 
 
-
-# -----------------------------
-# 2. Noise Filter
-# -----------------------------
-class NoiseFilter:
+class CoherenceMap:
     """
-    Removes Δ that are too small to matter.
-    """
-    def __init__(self, threshold=0.05):
-        self.threshold = threshold
+    Placeholder for coherence map.
+    Real version handles:
+      - adjacency graph
+      - phase-window timing
+      - Δintent → Δphase translation
 
-    def apply(self, delta_value):
-        if abs(delta_value) < self.threshold:
-            return None
-        return DeltaSignal(delta_value)
-
-
-
-# -----------------------------
-# 3. Phase Scheduler (v0.2 stub)
-# -----------------------------
-class PhaseScheduler:
-    """
-    Placeholder for:
-        - phase update ordering
-        - stability constraints
-        - future optimization logic
-    Concept-only placeholder.
-    """
-    def schedule(self, nodes):
-        return range(len(nodes))  # simple pass-through for now
-
-
-
-# -----------------------------
-# 4. RCIRCUIT Engine (v0.2)
-# -----------------------------
-class RCIRCUIT:
-    """
-    Main resonance engine skeleton:
-        - holds nodes
-        - applies phase updates
-        - filters noise
-        - propagates Δsignal locally
+    🔹 한국어 주석:
+        실제 구현은 비공개. 이 구조는 ‘창시자 의도’만 공개.
     """
     def __init__(self):
-        self.nodes = []
-        self.filter = NoiseFilter()
+        self.map = {}
+
+    def register(self, node_id, neighbors):
+        self.map[node_id] = neighbors
+
+    def neighbors(self, node_id):
+        return self.map.get(node_id, [])
+
+
+class PhaseScheduler:
+    """
+    Scheduler stub for v0.3+:
+      - Δqueue
+      - stability window
+      - burst-control
+    """
+    def __init__(self):
+        self.queue = []
+
+    def enqueue(self, node_id, delta_signal):
+        self.queue.append((node_id, delta_signal))
+
+    def next(self):
+        if not self.queue:
+            return None
+        return self.queue.pop(0)
+
+
+class RCIRCUIT:
+    """
+    RCIRCUIT skeleton ready for expansion.
+    """
+    def __init__(self):
+        self.nodes = {}
+        self.coherence_map = CoherenceMap()
         self.scheduler = PhaseScheduler()
 
-    def add_node(self, node):
-        self.nodes.append(node)
+    def add_node(self, node_id, node: PhaseNode):
+        self.nodes[node_id] = node
 
-    def compute_delta(self, a, b):
-        """Basic Δ computation (placeholder)."""
-        return b.phase - a.phase
+    def connect(self, node_id, neighbors):
+        self.coherence_map.register(node_id, neighbors)
 
-    def propagate(self, origin_index, delta_signal):
+    def noise_filter(self, delta, threshold=0.05):
+        if abs(delta) < threshold:
+            return None
+        return DeltaSignal(delta)
+
+    def propagate(self, node_id, delta_signal):
         """
-        Conceptual propagation.
-        Only Δsignal transmitted.
+        Public-safe placeholder.
+        Real propagation: (not released)
+            - phase windows
+            - resonance weights
+            - semantic Δintent mapping
         """
         if delta_signal is None:
             return
 
-        for i in self.scheduler.schedule(self.nodes):
-            if i == origin_index:
-                continue
-            self.nodes[i].update_phase(delta_signal.value)
+        for nb in self.coherence_map.neighbors(node_id):
+            self.nodes[nb].update_phase(delta_signal.value)
 
 
-
-# -----------------------------
-# 5. Example Usage (toy)
-# -----------------------------
+# Example (concept only)
 if __name__ == "__main__":
     rc = RCIRCUIT()
 
-    # two nodes with different phases
-    n1 = PhaseNode(1.0)
-    n2 = PhaseNode(1.5)
+    rc.add_node("A", PhaseNode(1.0))
+    rc.add_node("B", PhaseNode(1.5))
 
-    rc.add_node(n1)
-    rc.add_node(n2)
+    rc.connect("A", ["B"])
 
-    # compute delta
-    delta = rc.compute_delta(n1, n2)
+    delta = 1.5 - 1.0
+    signal = rc.noise_filter(delta)
 
-    # noise filtering
-    signal = rc.filter.apply(delta)
+    rc.propagate("A", signal)
 
-    # propagate meaningful Δ
-    rc.propagate(0, signal)
+    print(rc.nodes["A"].phase, rc.nodes["B"].phase)
+# ============================================================
 
-    print("Node phases after propagation:")
-    for node in rc.nodes:
-        print(node.phase)
 
