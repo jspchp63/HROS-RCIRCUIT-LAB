@@ -1,7 +1,7 @@
 🌐 HROS–RCIRCUIT LAB ROADMAP v1.0
 
 Phase Computing · Resonance Architecture · Human Return OS
-(Updated: 2025-Q1)
+(Updated: 2025-Q4)
 
 0. Purpose of This Roadmap
 
@@ -9,7 +9,7 @@ This roadmap shows the public-safe progression of the RCIRCUIT architecture, Pha
 It does not reveal proprietary algorithms.
 It communicates vision → milestones → expected modules to collaborators, researchers, and future investors.
 
-1. CURRENT STATUS (Q1 2025)
+1. CURRENT STATUS (Q4 2025)
 ✅ Completed
 
 Concept architecture of RCIRCUIT (phase-based compute model)
@@ -70,7 +70,7 @@ Milestones
 
 20+ developer inquiries (market signal)
 
-🔹 Phase 2 — RCIRCUIT Prototype (Q2 → Q3 2025)
+🔹 Phase 2 — RCIRCUIT Prototype (Q1 → Q2 2026)
 
 Deliverables
 
@@ -92,7 +92,7 @@ Invite-only research review
 
 Architecture criticism session (HPC + physics researchers)
 
-🔹 Phase 3 — Phase Compute OS (Q3 → Q4 2025)
+🔹 Phase 3 — Phase Compute OS (Q3 2025)
 
 Deliverables
 
@@ -112,7 +112,7 @@ Milestones
 
 HPC / DeepTech community discussion
 
-🔹 Phase 4 — HROS Integration (2025 → 2026)
+🔹 Phase 4 — HROS Integration ( 2026+)
 
 Deliverables
 
