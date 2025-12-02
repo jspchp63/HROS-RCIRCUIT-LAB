@@ -1,1 +1,12 @@
 
+  "experiment_id": "phase_sim_v0.1",
+  "description": "Basic Δsignal propagation test with 5 nodes.",
+  "nodes": 5,
+  "initial_phases": [1.0, 1.5, 2.0, 0.5, 0.8],
+  "delta_input": 0.3,
+  "noise_threshold": 0.05,
+  "propagation_steps": 10,
+  "version": "v0.1"
+}
+
+
