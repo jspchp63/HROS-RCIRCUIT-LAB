@@ -1,6 +1,6 @@
 # 🌐 HROS-RCIRCUIT-LAB  
 Phase Computing · RCIRCUIT Architecture · Human Return OS  
-A DeepTech R&D Repository (Concept-First, Safety-First Edition)
+A DeepTech R&D Repository 
 
 ---
 
