@@ -86,7 +86,7 @@ PhaseComputeOS_EnergyWall_v3.pdf — Power collapse analysis
 
 PhaseComputeOS_PublicBrief_v2.pdf — Architecture overview
 
-RCIRCUIT_Definition_v1.pdf — Google NLP definition trace
+
 
 Boundary maps, diagrams, conceptual models
 
