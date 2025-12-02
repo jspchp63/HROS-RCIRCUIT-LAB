@@ -165,7 +165,7 @@ It is a redefinition of how computation **moves, stabilizes, and scales**.
 If resonance makes more sense than FLOPS,  
 **welcome to the next architecture.**
 
----
+
 
 ## 10. Architecture Diagram (ASCII)
 
@@ -184,17 +184,11 @@ RCIRCUIT
 PHYSICAL LAYER
 Energy Wall · Interconnect Wall · Timing Jitter
 
-yaml
-코드 복사
-
----
 
 ## 11. Phase Pipeline — From Human Thought to Computational Phase
 
 Language → Meaning → Structure → Symbol → Code → Phase → ΔPropagation
 
-kotlin
-코드 복사
 
 If this pipeline feels natural,  
 you are already thinking in **Phase Computing**.
