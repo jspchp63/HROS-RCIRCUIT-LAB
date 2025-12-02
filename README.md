@@ -1,157 +1,123 @@
-RCIRCUIT = A phase-based computing architecture designed to bypass GPU/TPU scaling limits caused by interconnect physics.
-This repo contains public briefs, physics analyses, and architecture outlines.
-Target: HPC, interconnect, GPU infra, and compute-physics researchers.
-Status: Conceptual architecture; prototype not included.
-Core idea: Compute should scale by resonance-density, not FLOPS.
-HROS-RCIRCUIT-LAB  
+RCIRCUIT / Phase Computing Lab
 
----
+The real bottleneck is not compute — it’s interconnect.
+RCIRCUIT computes by PHASE, not by movement.
 
-## 1. 🚧 What This Project Solves (The Real AI Bottleneck)
+🔥 What Problem This Solves
 
-Modern GPUs/TPUs are not failing because AI became smarter.  
-They are failing because **physics stopped scaling**.
+Modern GPUs didn’t hit a compute wall.
+They hit heat, power, distance, and timing limits.
 
-The four physical walls:
+AI is collapsing at data movement cost, not intelligence.
 
-- Heat  
-- Power density  
-- Distance  
-- Timing (clock + jitter)  
-- Interconnect collapse (the real killer)
+Interconnect is the true bottleneck.
 
-Every AI system today collapses not at *compute*,  
-but at **data movement cost**.
+RCIRCUIT is a physics-shift architecture that reduces movement and computes by phase propagation, not FLOPS.
 
-**RCIRCUIT** is an architectural attempt to bypass those physical limits  
-through resonance-based computation.
+⚙️ Core Concept (1 Sentence)
 
----
+Compute should scale by resonance-density, not FLOPS.
 
-## 2. 🔥 Core Concept (One Sentence)
+🧬 Phase Compute Stack (Minimal Public Architecture)
+Layer 0 — Physical Limits
 
-### **“Compute should scale by resonance-density, not FLOPS.”**
+Heat wall
 
-Old paradigm (GPUs/TPUs):  
-- token prediction  
-- global data movement  
-- massive interconnect load  
-→ thermal collapse / diminishing energy returns
+Power density wall
 
-New paradigm (RCIRCUIT):  
-- local phase coherence  
-- minimized movement  
-- resonance-driven stability at scale
+Distance / latency
 
----
+Timing jitter
 
-## 3. 🧬 Phase Compute OS — Minimal Public Architecture
+Interconnect collapse
 
-### **Layer 0: Physical Constraints**
-- Energy Wall  
-- Interconnect Wall  
-- Timing jitter  
-- Thermal ceiling  
-- Power distribution limits  
+Layer 1 — RCIRCUIT (Resonance Engine)
 
-### **Layer 1: RCIRCUIT (Resonance Engine)**
-- Local phase register  
-- Coherent propagation  
-- Resonance-density scaling  
-- Movement minimization  
+Local phase register
 
-### **Layer 2: Phase Compute OS**
-- Phase scheduler  
-- Coherence map  
-- Stability metric  
-- Noise isolation  
+Coherence propagation
 
-### **Layer 3: HROS (Human Return OS)**
-- Emotion → Logic → Resonance pipeline  
-- Semantic stabilization  
-- Human-aligned compute loop  
-- Meaning/Intent preserving engine  
+Movement minimization
 
----
+Resonance-density scaling
 
-## 4. ⚡ RCIRCUIT vs GPU — Engineering Comparison
+Layer 2 — Phase Compute OS
 
-| Category | GPU / TPU | RCIRCUIT |
-|---------|-----------|----------|
-| Scaling Unit | FLOPS | Phase-density |
-| Bottleneck | Heat, Power, Interconnect | Coherence Noise |
-| Dominant Cost | Data Movement | Resonance Stability |
-| Architecture | Global Parallel Compute | Local Phase Propagation |
-| Long-term Limit | Thermal & Energy Wall | TBD (Resonance Bound) |
-| Paradigm | Silicon-bound | Physics-shift |
+Phase scheduler
 
----
+Coherence map
 
-## 5. 📂 Repository Contents
+Stability metric
 
-**Public Files**  
-- `Phase_Compute_OS_Public_Brief_v2.pdf`  
-- `Phase_Compute_OS_Public_Brief_v2.png`  
-- `pcintercon_v2.jpg`  
-- `ai_physics_boundary.png`  
-- `README.md` 
-Interconnect_Crisis_v2.1_NVLink.pdf — Physical bottleneck (NVLink Edition)
-Energy_Wall_v3.pdf — Power density collapse (2025–2030)
-More diagrams will be released in v3 (public-safe versions only).
-Interconnect_Crisis_v2_English.pdf
----
+Noise isolation
 
-## 6. 🎯 Who This Is For
+Layer 3 — HROS (Human Return OS)
 
-- GPU / TPU / HPC engineers  
-- PHY / Interconnect / Datacenter architects  
-- Energy-limited compute researchers  
-- Phase computing and resonance-theory explorers  
-- **Bridge Humans** — people who naturally think across:
-  - computation  
-  - physics  
-  - cognition  
-  - human meaning  
+Emotion → Logic → Resonance pipeline
 
-If this repo makes intuitive sense to you  
-on **first sight**,  
-you are probably not here by accident.
+Meaning-preserving compute
 
----
+Human-aligned stability loop
 
-## 7. 👤 Author / Contact
+⚡ RCIRCUIT vs GPU (Engineering Summary)
+Category	GPU / TPU	RCIRCUIT
+Scaling Unit	FLOPS	Phase-density
+Bottleneck	Heat / Power / Interconnect	Coherence Noise
+Cost	Data Movement	Resonance Stability
+Architecture	Global Parallel Compute	Local Phase Propagation
+Limit	Thermal/Energy Wall	TBD (Resonance Bound)
+🔍 Core Algorithm Principle (Public Version)
 
-**Founder / Architect — Chulhee Park (박철희)**  
-Phase Computing · RCIRCUIT · HROS · RME Lab
+RCIRCUIT = remove noise locally → propagate only Δphase.
 
-YouTube: **@2EmotionCompute**  
-Instagram: **@james1652720**  
-GitHub: **jspchp63**
+Not “move values.”
 
----
+Not “synchronize global state.”
 
-## 8. 📌 Status
+Only send Δsignal (phase change).
 
-This repository contains:  
-- Concept & Public Brief v2  
-- No implementation code yet  
-- Architecture under verification  
-- Partner mapping in progress  
+100× lower movement cost → new scaling curve.
 
-**RCIRCUIT code will only be released  
-after safety, legality, and partner alignment checks.**
+📂 Repository Contents
 
----
+Interconnect_Crisis_v2.1.pdf — NVLink & datacenter physics limits
 
-## 9. 🧭 Final Note
+PhaseComputeOS_EnergyWall_v3.pdf — Power collapse analysis
 
-Physics is the real bottleneck.  
+PhaseComputeOS_PublicBrief_v2.pdf — Architecture overview
+
+RCIRCUIT_Definition_v1.pdf — Google NLP definition trace
+
+Boundary maps, diagrams, conceptual models
+
+More public-safe diagrams coming in v3.
+
+🎯 Who This Is For
+
+GPU / TPU / HPC engineers
+
+Datacenter & interconnect architects
+
+Energy-constrained compute researchers
+
+Phase computing / resonance theorists
+
+If this makes sense instantly,
+you’re not random — you’re a Bridge Human.
+
+👤 Author
+
+Chulhee Park (박철희)
+Phase Computing · RCIRCUIT · HROS
+
+YouTube: @2EmotionCompute
+GitHub: jspchp63
+Instagram: @james1652720
+
+🧭 Final Note
+
+Physics is the bottleneck.
 Resonance is the next frontier.
 
-If these ideas resonate with you,  
-**welcome, Bridge Human.**# HROS-RCIRCUIT-LAB  
-Phase Computing · RCIRCUIT Architecture · Human Return OS (HROS)  
-Experimental DeepTech Repository
 
----
 
