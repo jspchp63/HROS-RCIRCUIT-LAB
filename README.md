@@ -113,13 +113,15 @@ you are not random — you are a **Bridge Human**.
 
 ---
 
-## 7. Author
-**Chulhee Park**  
-Founder · Phase Computing / RCIRCUIT / Human Return OS  
+## 7.Author
+Chulhee Park
+Founder · Phase Computing / RCIRCUIT / Human Return OS
 
-YouTube: @2EmotionCompute  
-GitHub: jspchp63  
-Instagram: @james1652720  
+🔗 YouTube: @2EmotionCompute
+🔗 GitHub: https://github.com/jspchp63
+
+🔗 Instagram: @james1652720
+🔗 Facebook: https://www.facebook.com/jsp638/  
 
 ---
 
