@@ -40,7 +40,7 @@ Goal: observe stability, noise behavior, and local coherence.
 ────────────────────────────────────────
 
 ```json
-{
+
   "experiment_name": "rcircuit_simulation_v0.1",
   "num_nodes": 20,
   "iterations": 50,
