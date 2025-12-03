@@ -177,6 +177,7 @@ PHYSICAL LAYER
 ```
 
 ---
+v0.3 experiment uploaded — resonance under noise. v0.4 in preparation.
 
 ## 11. Phase Pipeline — From Human Thought to Computational Phase
 Language → Meaning → Structure → Symbol → Code → Phase → ΔPropagation  
