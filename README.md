@@ -1,6 +1,8 @@
 # 🌐 HROS–RCIRCUIT LAB  
 Phase Computing · Resonance Architecture · Human Return OS  
 A DeepTech Research Repository
+📬 Research Contact  
+**jspchp638@gmail.com**
 
 ---
 
