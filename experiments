@@ -1,4 +1,10 @@
-1) summary_v0.1.md
+# RCIRCUIT Experiment Pack — v0.1  
+(Contains: summary_v0.1.md · config_v0.1.json · results_v0.1.csv)
+
+────────────────────────────────────────
+# 📄 1) summary_v0.1.md
+────────────────────────────────────────
+
 # RCIRCUIT Simulation v0.1 — Summary
 
 ## Purpose
@@ -6,10 +12,10 @@ This experiment simulates phase-based propagation using Δsignal rather than val
 Goal: observe stability, noise behavior, and local coherence.
 
 ## Key Concepts
-- PhaseNode: holds a phase (float)
-- Δsignal: only meaningful change propagates
-- Local propagation: no global synchronization
-- Noise isolation: small fluctuations suppressed
+- PhaseNode: holds a phase (float)  
+- Δsignal: only meaningful change propagates  
+- Local propagation: no global synchronization  
+- Noise isolation: small fluctuations suppressed  
 
 ## What v0.1 Tests
 1. Random initialization of nodes  
@@ -21,15 +27,20 @@ Goal: observe stability, noise behavior, and local coherence.
 - System should stabilize after several iterations  
 - High Δsignal should propagate outward  
 - Low Δsignal should decay  
-- No global synchronization needed
+- No global synchronization needed  
 
 ## Next Steps
 - Add coherence map  
 - Add resonance scoring  
 - Add visualization for Δsignal flow  
 
-📄 2) config_v0.1.json
 
+────────────────────────────────────────
+# 📄 2) config_v0.1.json
+────────────────────────────────────────
+
+```json
+{
   "experiment_name": "rcircuit_simulation_v0.1",
   "num_nodes": 20,
   "iterations": 50,
@@ -40,8 +51,13 @@ Goal: observe stability, noise behavior, and local coherence.
   "seed": 42,
   "description": "Minimal Δsignal-based phase propagation simulation for RCIRCUIT v0.1"
 
+────────────────────────────────────────
 
 📄 3) results_v0.1.csv
+────────────────────────────────────────
+
+csv
+코드 복사
 iteration,node_id,phase,delta_signal
 0,0,0.14,0.00
 0,1,-0.52,0.00
@@ -59,3 +75,6 @@ iteration,node_id,phase,delta_signal
 49,2,0.02,0.00
 49,3,0.01,0.00
 49,4,0.02,0.00
+────────────────────────────────────────
+
+END OF v0.1 EXPERIMENT PACK1
