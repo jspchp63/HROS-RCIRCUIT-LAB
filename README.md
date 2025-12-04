@@ -185,3 +185,5 @@ Language → Meaning → Structure → Symbol → Code → Phase → ΔPropagati
 If this feels natural,  
 you are already thinking in **Phase Computing**.
 
+Active RCIRCUIT development has moved to:
+➡️ rcircuit-phase-engine repository.
